@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # If variable not present use default values
-: ${APP_HOME:=/opt/app/src/api/build/libs/}}
+: ${APP_HOME:=/opt/app/src/build/libs/}}
 : ${JAVA_OPTIONS:=-Xmx512m}
 
 export APP_HOME JAVA_OPTIONS
