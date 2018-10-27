@@ -33,7 +33,6 @@ assert System.properties['java.specification.version'] == '1.8'
 
 apply plugin: 'maven'
 apply plugin: 'org.springframework.boot'
-apply plugin: 'war'
 apply plugin: 'propdeps'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'idea'
@@ -56,9 +55,10 @@ bootRepackage {
    mainClass = 'com.corda.backend.CordaApp'
 }
 
-war {
-
+jar {
+    baseName = 'corda-api'
 }
+
 
 springBoot {
     mainClass = 'com.corda.backend.CordaApp'
