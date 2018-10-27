@@ -39,7 +39,7 @@ WORKDIR /opt/app
 ENV HOME=/opt/app
 
 USER 10001
-EXPOSE 8080
+EXPOSE 8080 8443
 
 # Start it
 CMD ["/run-backend.sh"]
